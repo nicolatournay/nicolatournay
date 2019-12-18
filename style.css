@@ -1,0 +1,677 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1a2a6c;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, rgba(253, 187, 45, 0.9), rgba(178, 31, 31, 0.9), rgba(26, 42, 108, 0.9)), url(./images/brussels-skyline.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, rgba(253, 187, 45, 0.9), rgba(178, 31, 31, 0.9), rgba(26, 42, 108, 0.9)), url(./images/brussels-skyline.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Image by <a href="https://pixabay.com/users/dimitrisvetsikas1969-1857980/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3597445">Dimitris Vetsikas</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3597445">Pixabay</a> */
+
+h1,
+h2,
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+h1 {
+  font-weight: 900;
+}
+h2 {
+  font-weight: 700;
+}
+h3 {
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100vh; /* Full-height: remove this if you want "auto" height */
+  width: 20%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #c4c4c4; /* Silver: ; */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+}
+
+.sidebar h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.contact-me {
+  background-color: #d3d3d3;
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.center-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+.social-links i {
+  font-size: 1.5rem;
+}
+
+.navbar {
+  margin: 0px;
+  height: 64vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar li a {
+  /*padding: 25px 0% 25px 20%;*/
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5vw;
+  color: #46473e;
+}
+
+.active, .navbar li a:hover {
+  background-color: #46473e;
+  color: #d3d3d3;
+}
+
+.active p, .active i {
+  color: #d3d3d3;
+}
+
+.navbar li a p {
+  margin: 0px 2rem;
+}
+
+.avatar {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.avatar:hover {
+  width: 50.5%;
+  box-shadow: 2px 2px 30px #605f67;
+}
+
+/* Hero banner */
+.container {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-banner {
+  font-family: 'Archivo Black', sans-serif;
+  font-weight: normal;
+  font-size: 8rem;
+  color: turquoise;
+  margin-left: 25vw;
+  position: absolute;
+  top: 40vh;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Arrows */
+.big-arrow {
+  border: solid rgba(255,255,255, 0.5);
+  border-width: 0 0.8rem 0.8rem 0;
+  display: inline-block;
+  padding: 0.8rem;
+}
+
+.big-arrow:hover {
+  border: solid turquoise;
+  border-width: 0 1rem 1rem 0;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.arrow {
+  border: solid rgba(255,255,255, 0.5);
+  border-width: 0 0.45rem 0.45rem 0;
+  display: inline-block;
+  padding: 0.45rem;
+}
+
+.arrow:hover {
+  border: solid rgba(255,255,255, 1);
+  border-width: 0 0.5rem 0.5rem 0;
+  padding: 0.5rem;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  position: absolute;
+  left: 60%;
+  top: 10%;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  position: absolute;
+  left: 60%;
+  bottom: 10%;
+}
+
+/* Cards */
+.card {
+  margin: 0 0 0 35vw;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50vw;
+  min-height: 60vh;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+  padding: 0 6vh;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.skill-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-wrapper h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 3em;
+  margin: 0 0 0.3em 0;
+}
+
+.img-card {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-wrapper {
+  padding: 0 6vh;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-wrapper h2 {
+  margin-bottom: 1.4rem;
+}
+
+.text-wrapper p {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+object {
+  width: 2em;
+}
+
+/* JS */
+#myProgressJs {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px gold;
+  border-radius: 50px;
+}
+
+#myBarJs {
+  width: 0%;
+  height: 1.5rem;
+  background-color: gold;
+  border-radius: 50px;
+}
+
+/* CSS */
+#myProgressCss {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px dodgerblue;
+  border-radius: 50px;
+}
+
+#myBarCss {
+  width: 0%;
+  height: 1.5rem;
+  background-color: dodgerblue;
+  border-radius: 50px;
+}
+
+/* HTML */
+#myProgressHtml {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px chocolate;
+  border-radius: 50px;
+}
+
+#myBarHtml {
+  width: 0%;
+  height: 1.5rem;
+  background-color: chocolate;
+  border-radius: 50px;
+}
+
+/* Bootstrap */
+#myProgressBootstrap {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px darkslateblue;
+  border-radius: 50px;
+}
+
+#myBarBootstrap {
+  width: 0%;
+  height: 1.5rem;
+  background-color: darkslateblue;
+  border-radius: 50px;
+}
+
+/* Ruby */
+#myProgressRuby {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px red;
+  border-radius: 50px;
+}
+
+#myBarRuby {
+  width: 0%;
+  height: 1.5rem;
+  background-color: red;
+  border-radius: 50px;
+}
+
+/* RubyOnRails */
+#myProgressRubyOnRails {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px firebrick;
+  border-radius: 50px;
+}
+
+#myBarRubyOnRails {
+  width: 0%;
+  height: 1.5rem;
+  background-color: firebrick;
+  border-radius: 50px;
+}
+
+/* Figma */
+#myProgressFigma {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px mediumseagreen;
+  border-radius: 50px;
+}
+
+#myBarFigma {
+  width: 0%;
+  height: 1.5rem;
+  background-color: mediumseagreen;
+  border-radius: 50px;
+}
+
+/* Photoshop */
+#myProgressPhotoshop {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px darkslateblue;
+  border-radius: 50px;
+}
+
+#myBarPhotoshop {
+  width: 0%;
+  height: 1.5rem;
+  background-color: darkslateblue;
+  border-radius: 50px;
+}
+
+/* Illustrator */
+#myProgressIllustrator {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px goldenrod;
+  border-radius: 50px;
+}
+
+#myBarIllustrator {
+  width: 0%;
+  height: 1.5rem;
+  background-color: goldenrod;
+  border-radius: 50px;
+}
+
+/* InDesign */
+#myProgressInDesign {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px hotpink;
+  border-radius: 50px;
+}
+
+#myBarInDesign {
+  width: 0%;
+  height: 1.5rem;
+  background-color: hotpink;
+  border-radius: 50px;
+}
+
+/* English */
+#myProgressEnglish {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px steelblue;
+  border-radius: 50px;
+}
+
+#myBarEnglish {
+  width: 0%;
+  height: 1.5rem;
+  background-color: steelblue;
+  border-radius: 50px;
+}
+
+/* French */
+#myProgressFrench {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px firebrick;
+  border-radius: 50px;
+}
+
+#myBarFrench {
+  width: 0%;
+  height: 1.5rem;
+  background-color: firebrick;
+  border-radius: 50px;
+}
+
+/* Dutch */
+#myProgressDutch {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px mediumseagreen;
+  border-radius: 50px;
+}
+
+#myBarDutch {
+  width: 0%;
+  height: 1.5rem;
+  background-color: mediumseagreen;
+  border-radius: 50px;
+}
+
+#myBarDutch i {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* PowerPoint */
+#myProgressPowerPoint {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px tomato;
+  border-radius: 50px;
+}
+
+#myBarPowerPoint {
+  width: 0%;
+  height: 1.5rem;
+  background-color: tomato;
+  border-radius: 50px;
+}
+
+/* Excell */
+#myProgressExcell {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px forestgreen;
+  border-radius: 50px;
+}
+
+#myBarExcell {
+  width: 0%;
+  height: 1.5rem;
+  background-color: forestgreen;
+  border-radius: 50px;
+}
+
+/* Word */
+#myProgressWord {
+  width: 70%;
+  height: 1.5rem;
+  border: solid 2px royalblue;
+  border-radius: 50px;
+}
+
+#myBarWord {
+  width: 0%;
+  height: 1.5rem;
+  background-color: royalblue;
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 1150px) {
+  .skill-wrapper i {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1349px) {
+
+  body {
+    margin: 0;
+  }
+
+  .up {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    color: red;
+  }
+
+  .down {
+    left: 50%;
+    bottom: 7%;
+  }
+
+  .big-arrow {
+    border-width: 0 1.5rem 1.5rem 0;
+    padding: 1.5rem;
+  }
+
+  .big-arrow:hover {
+    border-width: 0 1.8rem 1.8rem 0;
+    padding: 1.8rem;
+  }
+
+  .arrow {
+    border-width: 0 1rem 1rem 0;
+    padding: 1rem;
+  }
+
+  .arrow:hover {
+    border-width: 0 1.5rem 1.5rem 0;
+    padding: 1.5rem;
+  }
+
+  .hero-banner {
+    font-size: 4rem;
+    line-height: 6rem;
+    top: 50vh;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100vw;
+    margin: 0;
+    top: 61.5%;
+    min-height: 30vh;
+    max-height: 50vh;
+  }
+
+  .wrapper {
+    height: 50vh;
+  }
+
+  .text-wrapper {
+    height: 50vh;
+  }
+
+  .text-wrapper p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }
+
+  .sidebar {
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+  }
+
+  .contact-me {
+    height: 15vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+  }
+
+  .contact-me a img {
+    display: block;
+  }
+
+  .contact-me h1 {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  .social-links {
+    width: 25vw;
+    justify-content: space-between;
+  }
+
+  .social-links i {
+    font-size: 2rem;
+  }
+
+  .avatar {
+    width: 10vh;
+    border-radius: 50%;
+  }
+
+  .avatar:hover {
+    width: 15.5vh;
+    box-shadow: 2px 2px 30px #605f67;
+  }
+
+  .center-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    margin: 0px;
+    height: 8vh;
+    flex-direction: row;
+  }
+
+  .navbar li a {
+    height: 8vh;
+    width: 12.5vw;
+    padding: 0;
+  }
+
+  .navbar li a p {
+    display: none;
+  }
+
+  .navbar li a i {
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 689px) {
+
+  html {
+    font-size: 14px;
+  }
+
+  .hero-banner {
+    font-size: 4rem;
+  }
+
+/*  .text-wrapper {
+    height: 50vh;
+  }
+
+  .text-wrapper p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+  }*/
+
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 10px;
+  }
+  .hero-banner {
+    font-size: 3rem;
+  }
+
+  .text-wrapper p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+}
