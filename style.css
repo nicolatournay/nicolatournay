@@ -678,4 +678,8 @@ object {
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
+
+  .text-wrapper h2 {
+    font-size: 2.5;
+  }
 }
