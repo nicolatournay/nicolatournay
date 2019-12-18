@@ -511,13 +511,14 @@ object {
   }
 
   .up {
-    position: absolute;
     left: 50%;
+    margin-left: -1.5rem;
     top: 30%;
   }
 
   .down {
     left: 50%;
+    margin-left: -1.5rem;
     bottom: 7%;
   }
 
