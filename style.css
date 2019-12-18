@@ -665,9 +665,8 @@ object {
 @media only screen and (max-width: 600px) {
   html {
     font-size: 10px;
-    /*background: -webkit-linear-gradient(to left, rgba(253, 187, 45, 0.9), rgba(178, 31, 31, 0.9), rgba(26, 42, 108, 0.9)), url(./images/brussels-skyline-small.jpg);  /* Chrome 10-25, Safari 5.1-6
-    background: linear-gradient(to left, rgba(253, 187, 45, 0.9), rgba(178, 31, 31, 0.9), rgba(26, 42, 108, 0.9)), url(./images/brussels-skyline-small.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-    background-size: 30%;*/
+    background: -webkit-linear-gradient(to left, rgba(253, 187, 45, 0.9), rgba(178, 31, 31, 0.9), rgba(26, 42, 108, 0.9));
+    background: linear-gradient(to left, rgba(253, 187, 45, 0.9), rgba(178, 31, 31, 0.9), rgba(26, 42, 108, 0.9));
   }
 
   .hero-banner {
