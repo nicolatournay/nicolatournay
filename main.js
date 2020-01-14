@@ -260,7 +260,7 @@ function officeMove() {
 
 // Hero banner <i class="far fa-smile"></i> document.querySelector('.container h1')
 var num = -1;
-var txt = "Hi, my name is Nicola Tournay and I'm a front-end developer based in Brussels";
+var txt = "Hi, my name is Nicola Tournay and I'm a web developer based in Brussels";
 var speed = 50;
 
 function typeWriter() {
